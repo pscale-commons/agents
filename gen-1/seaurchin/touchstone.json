@@ -1,0 +1,270 @@
+{
+  "1": {
+    "1": {
+      "1": {
+        "_": "split $address ."
+      },
+      "2": {
+        "_": "get #1 0"
+      },
+      "3": {
+        "_": "get #1 1"
+      },
+      "4": {
+        "_": "eq #2 0"
+      },
+      "5": {
+        "1": "chars #3",
+        "2": "chars #2",
+        "_": "if #4"
+      },
+      "6": {
+        "1": "int 0",
+        "2": "len #2",
+        "_": "if #4"
+      },
+      "_": "Parse semantic number into walk digits and whole"
+    },
+    "2": {
+      "1": {
+        "_": "let whole $whole"
+      },
+      "2": {
+        "1": "nav $node $item",
+        "2": "let node #1",
+        "3": "read #1",
+        "4": "sub $whole $i",
+        "5": "sub #4 1",
+        "6": {
+          "1": "arr #5 #3",
+          "2": "arr",
+          "_": "if #3"
+        },
+        "7": "return #6",
+        "_": "each $walkDigits"
+      },
+      "_": "Spindle — path chain, wide to specific"
+    },
+    "3": {
+      "1": {
+        "_": "init $walkDigits"
+      },
+      "2": {
+        "_": "last $walkDigits"
+      },
+      "3": {
+        "_": "let terminal #2"
+      },
+      "4": {
+        "_": "join #1 ."
+      },
+      "5": {
+        "_": "nav $tree #4"
+      },
+      "6": {
+        "_": "let parent #5"
+      },
+      "7": {
+        "_": "range 10"
+      },
+      "8": {
+        "1": "eq $item $terminal",
+        "2": "nav $parent $item",
+        "3": "exists #2",
+        "4": "not #1",
+        "5": "and #3 #4",
+        "6": "read #2",
+        "7": "isobj #2",
+        "8": {
+          "1": "arr $item #6 #7",
+          "2": "arr",
+          "_": "if #5"
+        },
+        "9": "return #8",
+        "_": "each #7"
+      },
+      "_": "Ring — siblings at terminal parent"
+    },
+    "4": {
+      "1": {
+        "_": "join $walkDigits ."
+      },
+      "2": {
+        "_": "nav $tree #1"
+      },
+      "_": "Dir — subtree from endpoint"
+    },
+    "5": {
+      "1": {
+        "1": "get $item 0",
+        "2": "eq #1 $pscale",
+        "3": {
+          "1": "id $item",
+          "_": "if #2"
+        },
+        "4": "return #3",
+        "_": "each $walked"
+      },
+      "2": {
+        "_": "len #1"
+      },
+      "3": {
+        "1": "get #1 0",
+        "2": "last $walked",
+        "_": "if #2"
+      },
+      "_": "Point — single node at pscale"
+    },
+    "6": {
+      "1": "eq $depth $target",
+      "2": "read $node",
+      "3": "arr $path #2",
+      "4": {
+        "_": "guard #1 arr #3"
+      },
+      "5": "leaf $node",
+      "6": {
+        "_": "guard #5 arr"
+      },
+      "7": "range 10",
+      "8": {
+        "1": "nav $node $item",
+        "2": "exists #1",
+        "3": "not #2",
+        "4": {
+          "_": "guard #3 arr"
+        },
+        "5": "len $path",
+        "6": {
+          "1": "cat $path . $item",
+          "2": "id $item",
+          "_": "if #5"
+        },
+        "7": "add $depth 1",
+        "8": "call $discWalk node #1 depth #7 path #6",
+        "9": "return #8",
+        "_": "concat #7"
+      },
+      "9": {
+        "_": "return #8"
+      },
+      "_": "Recursive disc walk — collect all nodes at target depth"
+    },
+    "_": "BSP — tree navigation algorithms"
+  },
+  "2": {
+    "1": {
+      "1": "nav $response stop_reason",
+      "2": "eq #1 tool_use",
+      "3": "eq #1 pause_turn",
+      "4": "or #2 #3",
+      "_": "Check if twist should continue looping"
+    },
+    "2": {
+      "1": {
+        "1": "nav $item type",
+        "2": "eq #1 tool_use",
+        "3": {
+          "1": "id $item",
+          "_": "if #2"
+        },
+        "4": "return #3",
+        "_": "each $content"
+      },
+      "_": "Extract tool_use blocks from response content"
+    },
+    "3": {
+      "1": {
+        "1": "nav $item id",
+        "2": "get $results $i",
+        "3": "obj type tool_result tool_use_id #1 content #2",
+        "4": "return #3",
+        "_": "each $tools"
+      },
+      "2": "obj role assistant content $content",
+      "3": "obj role user content #1",
+      "4": "push $messages #2 #3",
+      "_": "Build tool results and append to message history"
+    },
+    "_": "Twist — async LLM loop algorithms"
+  },
+  "3": {
+    "1": {
+      "1": "nav $node stimulus",
+      "2": "eq #1 $stimulus",
+      "3": {
+        "_": "guard #2 arr $path"
+      },
+      "4": "leaf $node",
+      "5": {
+        "_": "guard #4 arr"
+      },
+      "6": "range 10",
+      "7": {
+        "1": "nav $node $item",
+        "2": "isobj #1",
+        "3": "not #2",
+        "4": {
+          "_": "guard #3 arr"
+        },
+        "5": "len $path",
+        "6": {
+          "1": "cat $path . $item",
+          "2": "id $item",
+          "_": "if #5"
+        },
+        "7": "call $findConcern node #1 path #6",
+        "8": "return #7",
+        "_": "concat #6"
+      },
+      "8": {
+        "_": "return #7"
+      },
+      "_": "Find concern matching stimulus — recursive walk"
+    },
+    "2": {
+      "1": "split $path .",
+      "2": {
+        "1": "nav $node $item",
+        "2": "let node #1",
+        "3": "read #1",
+        "4": {
+          "1": "id #3",
+          "_": "if #3"
+        },
+        "5": "return #4",
+        "_": "each #1"
+      },
+      "_": "Walk concern path collecting texts — shared context advances node"
+    },
+    "3": {
+      "1": "read $node",
+      "2": "isobj $node",
+      "3": {
+        "1": "range 10",
+        "2": "arr",
+        "_": "if #2"
+      },
+      "4": {
+        "1": "nav $node $item",
+        "2": "exists #1",
+        "3": {
+          "1": "read #1",
+          "2": "id null",
+          "_": "if #2"
+        },
+        "4": "exists #3",
+        "5": {
+          "1": "arr $item #3",
+          "2": "arr",
+          "_": "if #4"
+        },
+        "6": "return #5",
+        "_": "each #3"
+      },
+      "_": "Collect section: root text + numbered children as [digit, text] pairs"
+    },
+    "_": "Kernel — concern routing and compilation"
+  },
+  "_": "Touchstone — proven Mode 4 blocks"
+}

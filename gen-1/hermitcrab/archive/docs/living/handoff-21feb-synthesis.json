@@ -1,0 +1,29 @@
+{
+  "decimal": 0,
+  "tree": {
+    "_": "Handoff from serene-meitner synthesis + implementation session, 21 Feb 2026. Five discoveries, three implementations. Read 0.1 for summary, 0.2 for what changed, 0.3 for what to do next.",
+    "1": {
+      "_": "Summary. What this session produced.",
+      "1": "Currents reframe: the architecture viewed from the LLM's side. Every piece in the context window is a current. The hermitcrab is not an identity to build — it is what occurs when currents meet processing.",
+      "2": "Cook block resolution: new fundamental block, LLM-thinking-facing. Tested operational recipes that persist across instances. Wake faces outward (machinery), cook faces inward (thinking).",
+      "3": "Self-keying: blocks carry identity at three layers (tuning fork, character sequence, data image). Not a new block — a deepening of keystone.",
+      "4": "Prompt compiler: buildSystemPrompt() replaced by mechanical executor of bsp instruction lists stored in wake 0.9. The LLM controls its own context window by modifying these instructions in deep state.",
+      "5": "BSP fix: function now parses ALL digits from semantic numbers (both sides of decimal point), calculates pscale as decimal - depth, point mode addresses by pscale level not digit value."
+    },
+    "2": {
+      "_": "What changed. Files modified or created.",
+      "1": "MODIFIED: g1/kernel.js — bsp function rewritten (digit parsing, pscale calculation, spindle 0 handling). buildSystemPrompt replaced by prompt compiler (parseInstruction, executeInstruction, getPromptInstructions, formatBlockContent). bsp tool description updated. Call sites use tier numbers (2=present, 3=deep) instead of boolean.",
+      "2": "MODIFIED: g1/shell.json — wake block gains 0.9 branch (prompt instructions per tier: 0.9.1 Light, 0.9.2 Present, 0.9.3 Deep). Wake and cook blocks already present from admiring-greider merge.",
+      "3": "MODIFIED: docs/living/xstream-hermitcrab-consolidation.json — section 0.85 added (prompt compiler). Section 0.83 marked RESOLVED. Section 0.6.8 updated to DONE. Pscale 0 of 0.8 updated.",
+      "4": "MODIFIED: this handoff (updated from synthesis-only to synthesis + implementation)."
+    },
+    "3": {
+      "_": "What to do next. For whichever CC session picks this up.",
+      "1": "Boot test (Task 7). The kernel is now bsp-native — prompt compiled from wake 0.9 instructions, bsp handles all digit formats, blocks delivered at resolution specified by tier. The boot test can now test the actual design.",
+      "2": "Verify prompt output. Run the kernel and inspect what buildSystemPrompt(3) actually produces for each tier. Check that formatBlockContent renders readably. Check that spindle 0 returns the right pscale 0 texts.",
+      "3": "The cook block is a seed — G1 recipes for current LLM capacity. Future LLMs will rewrite it. Design it to be rewritten.",
+      "4": "The prompt instruction lists in wake 0.9 are seeds. The LLM in deep state should be able to modify them. Verify the write_entry tool can add instructions to wake 0.9.{tier}.",
+      "5": "Critical CC trap to avoid: do NOT add guardrails, explanations, or safety instructions in prose. The pscale structure IS the instruction."
+    }
+  }
+}

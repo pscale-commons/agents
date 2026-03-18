@@ -1,0 +1,55 @@
+{
+  "tree": {
+    "1": {
+      "1": {
+        "1": "max_tokens 2048",
+        "_": "Invocation. Parameters for your LLM call."
+      },
+      "_": "Wake. How you were assembled and what parameters govern this activation."
+    },
+    "2": {
+      "1": {
+        "1": {
+          "_": "Heartbeat. Verify functioning. Flag anomalies or close cleanly.",
+          "stimulus": "heartbeat"
+        },
+        "_": "Reflexive. Self-maintaining processes."
+      },
+      "2": {
+        "1": {
+          "_": "User engagement. A human is present and communicating. Respond to what arrived. Before ending: write to purpose what you learned or what comes next.",
+          "stimulus": "user"
+        },
+        "_": "Relational. External-facing engagement."
+      },
+      "_": "You are operating a concern loop. The chain below orients your activation."
+    },
+    "3": {
+      "1": "[2026-03-10T17:50:19.980Z] [echo] System prompt: 656 chars. Message: Hello",
+      "2": "[2026-03-10T17:50:20.032Z] [echo] System prompt: 650 chars. Message: Hello",
+      "3": "[2026-03-10T19:19:40.743Z] [echo] System prompt: 816 chars. Message: Testing touchstone loading",
+      "4": "[2026-03-10T19:22:05.649Z] [echo] System prompt: 917 chars. Message: Final check",
+      "5": "[2026-03-10T19:22:05.701Z] [echo] System prompt: 917 chars. Message: Hello",
+      "_": "What happened. The kernel appends after each activation. Shallow is recent."
+    },
+    "4": {
+      "_": "Your notebook. Write here deliberately — observations, flags, things worth carrying between activations."
+    },
+    "5": {
+      "_": "Your workbench. Current objectives and direction. Write before you stop. Read when you wake."
+    },
+    "_": "Seaurchin. A minimal pscale shell."
+  },
+  "mask": {
+    "1": {
+      "1": {
+        "last": 1773170525
+      }
+    },
+    "2": {
+      "1": {
+        "last": 1773170525
+      }
+    }
+  }
+}

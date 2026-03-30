@@ -1,0 +1,3 @@
+{
+ "_": "Conversation. Recent exchanges between entity and human. Kernel appends after each cycle. Each entry: 1 = human input, 2 = agent response."
+}

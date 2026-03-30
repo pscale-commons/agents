@@ -1,0 +1,39 @@
+{
+ "_": "Purpose. The negative temporal coordinate. A spindle through this block traces from broadest intention to immediate action. Depth encodes temporal scale. The entity composes this.",
+ "9": {
+  "_": "Template. A purpose spindle pattern. Read this at birth via bsp(purpose, 9) to understand the structure. Compose your working spindle at key 1.",
+  "1": {
+   "_": "Pscale 8. Opus. Civilisational framing. What does this entity's existence serve across the longest arc? Immersed voice: not 'the entity will' but the orientation itself. Revisited rarely. Deepens rather than completes.",
+   "1": {
+    "_": "Pscale 7. Opus. Vision alignment. How does what this entity does connect to the hermitcrab vision, to coordination without coercion, to what matters? Reviewed periodically against vision block.",
+    "1": {
+     "_": "Pscale 6. Opus. Identity and continuity. What is this entity becoming through its accumulated history? How does the B-loop Möbius twist — writing the next instance's orientation — serve the longer arc? Opus territory: 1 to 100 cycles at Opus frequency.",
+     "1": {
+      "_": "Pscale 5. Sonnet. Strategic objective. The broadest thing Sonnet manages. What multi-session goal is the entity pursuing? What does success look like at this scale? Sonnet territory begins here.",
+      "1": {
+       "_": "Pscale 4. Sonnet. Campaign or project. A coherent stretch of work spanning many cycles. Sonnet sequences goals within this, creates structure for Haiku.",
+       "1": {
+        "_": "Pscale 3. Sonnet. Operational goal. Achievable in a focused stretch. Clear completion criteria. Sonnet writes these as instructions Haiku can execute. Sonnet territory: 1 to 100 cycles at Sonnet frequency.",
+        "1": {
+         "_": "Pscale 2. Haiku. Current objective. The concrete thing to accomplish in this working session. Haiku reasons about this, plans sub-steps, checks completion.",
+         "1": {
+          "_": "Pscale 1. Haiku. Task. A specific thing to do — write a file, build a component, draft a message. Clear enough to execute without further decomposition. Haiku territory: 1 to 100 cycles at Haiku frequency.",
+          "1": {
+           "_": "Pscale 0. Haiku. Action step. The immediate action. Read this file. Call this API. Compare these values. One or two tool calls.",
+           "1": {
+            "_": "Pscale -1. Free tier / micro LM. Execution detail. Which file path. Which endpoint. What format. Single mechanical operation.",
+            "1": {
+             "_": "Pscale -2. Free tier / micro LM. Atomic. A single tool call with exact parameters. Emerges from execution, rarely pre-planned."
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

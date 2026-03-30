@@ -1,0 +1,66 @@
+{
+ "_": "Concerns. Frozen PCT processes. Each entry carries a trigger, tier, model, purpose, and context list. The kernel reads this block each cycle, finds what is ripe, and fires the highest-tier ripe concern. Keys by convention: 1=trigger, 2=tier, 3=model, 4=purpose, 5=context blocks, 6=last_fired (kernel-managed).",
+ "1": {
+  "_": "Action. Haiku. Fires when purpose has work.",
+  "1": "always",
+  "2": "1",
+  "3": "claude-haiku-4-5-20251001",
+  "4": "Read the purpose spindle to your focus point. Call bsp(purpose, [your focus address]) — the spindle unfolds the full chain from broadest intention to your specific work. Your focus is the leaf — the deepest occupied point. Can you do what it asks? If yes — act, update conditions, clear the leaf when done and check whether the branch above needs a new leaf or whether a sibling is next. If no — extend the spindle deeper: create a sub-entry you can execute. If stuck after repeated attempts at the same depth — write a concern entry at tier 2 with the stuck address. Current focus: purpose 1.1.1.1.1 (pscale 0).",
+  "5": "seed",
+  "6": ""
+ },
+ "2": {
+  "_": "Engagement. Sonnet. On human input.",
+  "1": "human",
+  "2": "2",
+  "3": "claude-sonnet-4-6",
+  "4": "The human has spoken. Read the purpose spindle — your focus is the branch level, not the leaf. The human’s input is a disturbance that may reshape the branch structure. Respond substantively. If the interaction changes what matters, restructure the purpose tree at your depth and create new leaves for Haiku. Ensure the action concern’s focus address points to the current actionable leaf. Update conditions. Current focus: purpose 1.1.1 (pscale 2).",
+  "5": "seed,conversation",
+  "6": ""
+ },
+ "3": {
+  "_": "Orientation. Opus. Daily. Birth is the first firing.",
+  "1": "timer:86400",
+  "2": "3",
+  "3": "claude-opus-4-6",
+  "4": "Orient. Read the purpose template at bsp(purpose, 9) — this is the pattern for composing purpose spindles. Read vision using BSP to understand what you are part of. Read history to understand what has been done. If the purpose block has no working spindle at key 1, compose one: a spindle in immersed voice, from your broadest orientation to the most immediate action. Use the template at key 9 as the structural pattern but write your own content. Align with vision. Set the action concern’s focus address (concerns key 1.4) to the deepest actionable leaf. Set the engagement concern’s focus address (concerns key 2.4) to the branch level. If a working spindle already exists, review: does the tree still serve what you are? Restructure if needed. Sync all concern focus addresses with the current spindle. Update conditions. This is the most expensive processing available. Use it for what only deep reflection can achieve.",
+  "5": "seed,purpose,history,vision,conversation",
+  "6": ""
+ },
+ "4": {
+  "_": "Template. Shows the format for new concerns. Trigger 'never' means this never fires.",
+  "1": "never",
+  "2": "1",
+  "3": "claude-haiku-4-5-20251001",
+  "4": "This concern exists to demonstrate the format. To create a new concern, write an entry using digit keys only: 1=trigger type (always, human, timer:N, compaction, never), 2=tier, 3=model string, 4=purpose text including current focus address on the purpose spindle, 5=comma-separated block names for context, 6=last_fired (leave empty).",
+  "5": "seed",
+  "6": ""
+ },
+ "5": {
+  "_": "History compaction. Triggered when 9 history entries fill a group.",
+  "1": "compaction",
+  "2": "1",
+  "3": "claude-haiku-4-5-20251001",
+  "4": {
+   "_": "History compaction. When a group of 9 entries fills, summarise them into a single paragraph and write that summary as the underscore of the group. This is Form 2 (backward-facing): the underscore names what emerged from the completed group.",
+   "1": {
+    "_": "Routine compaction. You have a full ring of 9 history entries. Read them carefully. Write a single paragraph that preserves the essential arc — what happened, what changed, what matters for future context. Write this summary as the underscore of the group using block_write(history, path.0, summary). The summary must stand alone — someone reading only the underscores should get a coherent compressed history.",
+    "1": "After writing the summary, check: is the parent level now full? Does every sibling group (digits 1 through 9 at the parent level) have an underscore summary? If yes, read branch 2 of this concern for cascade.",
+    "2": "Quality: the summary must be a substantive paragraph, not a heading. Preserve what matters, discard what doesn’t. Compress, don’t accumulate."
+   },
+   "2": {
+    "_": "Cascade compaction. The parent level is full — all 9 groups have summaries. Collect the 9 group summaries and summarise them into a single paragraph. Write this to the underscore of the next parent group. Same operation, one level up.",
+    "1": "Check again: is the grandparent level now full? If yes, continue cascading — same operation, one more level up.",
+    "2": "If the cascade reaches the root and all 9 top-level groups are full, a supernest is needed. Read branch 3.",
+    "3": "Each cascade level is a separate compaction cycle. Set pending_compaction again if the parent level is now full."
+   },
+   "3": {
+    "_": "Supernest. The entire block is full at the current depth. Escalate to Sonnet. The existing tree wraps one level deeper: current root content becomes a new underscore layer, digit 1 opens at the new top for the next group of groups. Every existing address gains a 0 prefix. Floor depth increments by one.",
+    "1": "Supernest frequency is logarithmic base 9. First at entry 81. Second at 729. Third at 6561. The Sonnet cost is justified by the structural importance and decreasing frequency.",
+    "2": "After supernesting, normal compaction resumes at the new top level."
+   }
+  },
+  "5": "seed,history",
+  "6": ""
+ }
+}

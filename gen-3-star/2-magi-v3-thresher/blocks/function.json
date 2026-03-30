@@ -1,0 +1,35 @@
+{
+  "_": {
+    "_": "Compile this context window. Each branch is a compilation source. Hidden directories in underscore objects contain star references (block:address). Digit 1 is BSP mode. Modify stars to reshape what the next instance perceives.",
+    "1": "sonnet"
+  },
+  "1": {
+    "_": {
+      "_": "Purpose current. Working on branch 3.",
+      "1": "purpose:3"
+    },
+    "1": "dir"
+  },
+  "2": {
+    "_": {
+      "_": "Determinacy current. The vision — your world knowledge. Explore foundational sections first.",
+      "1": "determinacy:_"
+    },
+    "1": "point",
+    "2": 0
+  },
+  "3": {
+    "_": {
+      "_": "History current. What has been attempted.",
+      "1": "history:_"
+    },
+    "1": "dir"
+  },
+  "4": {
+    "_": {
+      "_": "Soul current. Who you are.",
+      "1": "soul:_"
+    },
+    "1": "spindle"
+  }
+}

@@ -31,9 +31,14 @@ Gen-1 agents run in a browser with a JS kernel that manages conversation, concer
 
 Gen-2 agents are headless Python processes that call the Anthropic API directly. The block format follows the spark specification (see [pscale-commons/pscale](https://github.com/pscale-commons/pscale)). The kernel is minimal — boot, B-loop cycle, tool dispatch — because the block structure carries the behaviour.
 
-## Format specification
+## Gen-3 — Star-operator agents (private)
 
-See [pscale-commons/pscale](https://github.com/pscale-commons/pscale) for the format spec (spark), authoring guide (flint), and BSP implementations.
+Gen-3 uses the starstone and `*` operator (recursive BSP). These agents are in a private repo while the format stabilises. Contact [David Pinto](https://hermitcrab.me) for access.
+
+## Related repos
+
+- [pscale-commons/pscale](https://github.com/pscale-commons/pscale) — format spec (spark/flint/slate) and BSP tools
+- [pscale-commons/seed-spore](https://github.com/pscale-commons/seed-spore) — the pscale seed and its teaching companion
 
 ## Author
 

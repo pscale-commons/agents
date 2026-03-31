@@ -14,7 +14,7 @@ Built on the original BSP implementation and touchstone block format. JavaScript
 
 ## Gen-2 — Spark-era BSP
 
-Built on the spark format specification. Python standalone kernels using the Anthropic tool_use API. Tested 17 March 2026.
+Python standalone kernels using the Anthropic tool_use API. Tested 17 March 2026.
 
 | Agent | Model | Score | Notes |
 |-------|-------|-------|-------|
@@ -29,7 +29,7 @@ Each gen-2 agent directory contains the kernel, seed, run logs, and analysis.
 
 Gen-1 agents run in a browser with a JS kernel that manages conversation, concerns, and rendering. The BSP function and block format predate the formal specification.
 
-Gen-2 agents are headless Python processes that call the Anthropic API directly. The block format follows the spark specification (see [pscale-commons/pscale](https://github.com/pscale-commons/pscale)). The kernel is minimal — boot, B-loop cycle, tool dispatch — because the block structure carries the behaviour.
+Gen-2 agents are headless Python processes that call the Anthropic API directly. The block format follows the touchstone specification (see [pscale-commons/pscale](https://github.com/pscale-commons/pscale)). The kernel is minimal — boot, B-loop cycle, tool dispatch — because the block structure carries the behaviour.
 
 ## Gen-3 — Star-operator agents (private)
 
@@ -37,7 +37,7 @@ Gen-3 uses the starstone and `*` operator (recursive BSP). These agents are in a
 
 ## Related repos
 
-- [pscale-commons/pscale](https://github.com/pscale-commons/pscale) — format spec (spark/flint/slate) and BSP tools
+- [pscale-commons/pscale](https://github.com/pscale-commons/pscale) — format spec (touchstone/guidelines/design) and BSP tools
 - [pscale-commons/seed-spore](https://github.com/pscale-commons/seed-spore) — the pscale seed and its teaching companion
 
 ## Author

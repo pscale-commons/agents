@@ -1,0 +1,23 @@
+{
+  "_": "Kael's journey. What has happened so far.",
+  "1": {
+    "_": "Kael arrived at the Thornkeep crossroads as the sun dropped below the treeline. He has been walking since morning.",
+    "1": "The road from Millhaven was uneventful. Too uneventful — no other travellers for three days.",
+    "2": "2026-03-29T22:00:00"
+  },
+  "2": {
+    "_": "Instance 1: continue",
+    "1": "Kael followed the warm face of the waystone northeast, carrying the map fragment. He noticed the light footsteps circling three times before joining heavier steps in the same direction, and the impossible geography that felt familiar. The wind carried a scent of salt, suggesting unseen water.",
+    "2": "2026-03-29T22:29:07"
+  },
+  "3": {
+    "_": "Instance 2: continue",
+    "1": "Kael acted in character, following the warm face of the waystone northeast into the dark. He carried forward a memory of the Thornkeep crossroads, noting the warm face of the waystone, the impossible map fragment, and the scent of salt on the wind.",
+    "2": "2026-03-29T22:31:02"
+  },
+  "4": {
+    "_": "Instance 3: continue",
+    "1": "Wrote Kael’s action (world:4) and memory (character:4). Continued the journey into the ravine.",
+    "2": "2026-03-29T22:32:23"
+  }
+}

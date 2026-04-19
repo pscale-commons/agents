@@ -1,0 +1,43 @@
+{
+  "_": {
+    "_": {
+      "_": "a small coastal town"
+    }
+  },
+  "1": {
+    "_": {
+      "_": {
+        "_": "the harbour district",
+        "1": "oldest part of town",
+        "2": "fishing heritage"
+      }
+    },
+    "1": {
+      "_": {
+        "_": "the blue house",
+        "1": "known as the Pinto House",
+        "2": "built 100 years ago",
+        "3": "test-identity"
+      },
+      "1": {
+        "_": "living room — south-facing, warm light",
+        "1": "table by the window",
+        "2": "hearth",
+        "3": "grandmother's lamp"
+      },
+      "2": {
+        "_": "kitchen — narrow, north-facing",
+        "1": "stove",
+        "2": "sink"
+      }
+    },
+    "2": {
+      "_": "the red house",
+      "1": {
+        "_": "workshop",
+        "1": "lathe",
+        "2": "workbench"
+      }
+    }
+  }
+}

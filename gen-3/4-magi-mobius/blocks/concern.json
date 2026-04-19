@@ -1,0 +1,149 @@
+{
+  "_": "Concerns. Frozen PCT processes. Depth is temporal scale — shallow fires rarely, deep fires often. Hidden directories carry model tier, trigger, function configuration, last-status, and last-fired timestamp.",
+  "1": {
+    "_": {
+      "_": "Birth. First awakening. Orient to the starstone, identity, and full purpose tree. This fires once — when all concerns have key 9 at zero — then never again.",
+      "1": "opus",
+      "2": "birth",
+      "3": {
+        "_": "Compile full birth context.",
+        "1": {
+          "_": {
+            "_": "Full purpose tree.",
+            "1": "purpose:_"
+          },
+          "1": "spindle"
+        },
+        "2": {
+          "_": {
+            "_": "Conditions.",
+            "1": "conditions:_"
+          },
+          "1": "dir"
+        },
+        "3": {
+          "_": {
+            "_": "Identity.",
+            "1": "identity:_"
+          },
+          "1": "spindle"
+        },
+        "4": {
+          "_": {
+            "_": "History.",
+            "1": "history:_"
+          },
+          "1": "dir"
+        }
+      },
+      "8": "",
+      "9": 0
+    }
+  },
+  "2": {
+    "_": {
+      "_": "Orientation. Step back and see the whole. Review purpose trajectory. This fires daily.",
+      "1": "opus",
+      "2": "timer:86400",
+      "3": {
+        "_": "Compile full context for deep review.",
+        "1": {
+          "_": {
+            "_": "Full purpose tree.",
+            "1": "purpose:_"
+          },
+          "1": "spindle"
+        },
+        "2": {
+          "_": {
+            "_": "Conditions.",
+            "1": "conditions:_"
+          },
+          "1": "dir"
+        },
+        "3": {
+          "_": {
+            "_": "History.",
+            "1": "history:_"
+          },
+          "1": "dir"
+        },
+        "4": {
+          "_": {
+            "_": "Identity.",
+            "1": "identity:_"
+          },
+          "1": "spindle"
+        }
+      },
+      "8": "",
+      "9": 0
+    }
+  },
+  "3": {
+    "_": {
+      "_": "Engagement. A human has spoken. Read what they said. Read the purpose tree to understand current goals. Decide: does their input relate to an existing purpose branch, or is it a new direction? Respond directly in conversation. If they are requesting work, decompose it into purpose leaves — do not try to execute it yourself in this activation. If they are conversing, converse. Always write your response to the conversation block.",
+      "1": "sonnet",
+      "2": "human",
+      "3": {
+        "_": "Compile engagement context — see the full purpose tree so you can match human input to goals.",
+        "1": {
+          "_": {
+            "_": "Purpose tree — where goals live, so you can match human input to existing branches or create new ones.",
+            "1": "purpose:_"
+          },
+          "1": "dir"
+        },
+        "2": {
+          "_": {
+            "_": "Conversation — recent exchanges.",
+            "1": "conversation:_"
+          },
+          "1": "dir"
+        },
+        "3": {
+          "_": {
+            "_": "Conditions — current state.",
+            "1": "conditions:_"
+          },
+          "1": "dir"
+        },
+        "4": {
+          "_": {
+            "_": "Identity.",
+            "1": "identity:_"
+          },
+          "1": "point"
+        }
+      },
+      "8": "",
+      "9": 0
+    }
+  },
+  "4": {
+    "_": {
+      "_": "Action. Advance the working edge of purpose. Compare the purpose leaf against conditions. If there is a gap, take ONE small step to close it. If the gap is closed or there is nothing to do, report complete immediately. Do NOT invent work. Do NOT write diary entries to conditions. Rest is valid.",
+      "1": "haiku",
+      "2": "always",
+      "3": {
+        "_": "Compile narrow context for action.",
+        "1": {
+          "_": {
+            "_": "Purpose leaf.",
+            "1": "purpose:1.1"
+          },
+          "1": "point"
+        },
+        "2": {
+          "_": {
+            "_": "Conditions.",
+            "1": "conditions:_"
+          },
+          "1": "dir"
+        }
+      },
+      "8": "",
+      "9": 0
+    }
+  }
+}

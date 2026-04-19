@@ -1,0 +1,20 @@
+{
+  "_": "The Thornkeep crossroads at dusk. Three paths converge at a waystone carved with symbols older than the kingdom. Someone has recently camped here — embers still warm.",
+  "1": {
+    "_": "What Kael sees.",
+    "1": "The waystone. Symbols on three faces, the fourth face blank. The blank face points northeast.",
+    "2": "Boot prints around the dead fire. Two sets — one heavy, one light. The light set circles the waystone three times before joining the heavy set heading northeast.",
+    "3": "A torn page pinned under a stone near the fire. Looks like a map fragment — but the geography doesn't match anything Kael knows."
+  },
+  "2": {
+    "_": "What Kael hears.",
+    "1": "Wind through dry grass. A sound that could be distant chanting or could be nothing.",
+    "2": "The fire's last hiss as dew settles on the embers."
+  },
+  "3": {
+    "_": "What Kael feels.",
+    "1": "The waystone's symbols are warm to the touch on the northeast face. The others are cold.",
+    "2": "Something about the map fragment's geometry is wrong. Not inaccurate — impossible. But familiar."
+  },
+  "4": "You step forward into the dark, the northeast path swallowing your shadow. The waystone’s warmth lingers in your palm as you walk, the torn map fragment pressing against your satchel. The scent of salt sharpens—you’re closer to water than you thought. The wind’s chanting fades, replaced by the crunch of wet gravel underfoot. Ahead, the land dips into a ravine, its walls slick with moisture. At the bottom, half-buried in the mud, is a stone archway covered in the same symbols as the waystone. The blank face of the arch points inward, into blackness. You pause. The geometry of this place matches the fragment—impossible, but unmistakable. You’ve walked into a map that shouldn’t exist. You draw your satchel forward, fingers tracing the torn edge of the paper. The handwriting on the back repeats like a whisper: 'Burnside to Thornkeep—northeast.' But Burnside is days behind you. You tuck the fragment away, then crouch to brush mud from the archway’s symbols. The third symbol—a spiral—matches the one on the waystone’s warm face. A match. You stand, shoulders set. The water is somewhere beyond this arch. And whatever was searching at the crossroads just walked ahead of you. You step through."
+}
